@@ -1,22 +1,13 @@
 import * as React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
-import {
-  createHashRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Root from './routes/root';
+import { Outlet } from 'react-router-dom';
 
-let router = createHashRouter([
-  {
-    path: "/",
-    element: <Root />
-  }
-])
 function App() {
   return (
-    <ChakraProvider>
-      <RouterProvider router={router} />
-    </ChakraProvider>
+    <div>
+      <div></div>
+      <div style={{padding:"0 16px"}}><Outlet/></div>
+      <div></div>
+    </div>
   )
 }
 
