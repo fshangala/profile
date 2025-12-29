@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "name": "Run Script: dev",
+            "request": "launch",
+            "command": "npm run dev",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:5173/profile/",
+            "webRoot": "${workspaceFolder}/src",
+            "breakOnLoad": true,
+            "sourceMapPathOverrides": {
+                "vite://root/*": "${workspaceFolder}/*"
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Dev + Debug",
+            "configurations": ["Run Script: dev", "Launch Chrome against localhost"]
+        }
+    ]
+}

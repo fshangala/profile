@@ -1,4 +1,18 @@
-html, body {
-  margin: 0;
-  padding: 0;
+@import "tailwindcss";
+
+@theme {
+  /* This is where you define your custom colors, fonts, and animations */
+  /* Since you love Science & Engineering, maybe some high-contrast tech colors? */
+  --color-brand-primary: #0070f3;
+  --color-brand-secondary: #ff0080;
+  
+  --font-sans: "Inter", "system-ui", sans-serif;
+  --font-mono: "Fira Code", "monospace";
+}
+
+/* Base styles */
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-50 antialiased;
+  }
 }
