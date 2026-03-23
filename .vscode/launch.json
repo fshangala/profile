@@ -2,6 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Integrated Browser",
+            "request": "launch",
+            "type": "editor-browser",
+            "url": "http://localhost:5173/profile/",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
             "type": "node-terminal",
             "name": "Run Script: dev",
             "request": "launch",
@@ -20,10 +27,4 @@
             }
         }
     ],
-    "compounds": [
-        {
-            "name": "Dev + Debug",
-            "configurations": ["Run Script: dev", "Launch Chrome against localhost"]
-        }
-    ]
 }

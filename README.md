@@ -1,16 +1,60 @@
-# React + Vite
+# Developer Portfolio - Funduluka Shangala
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, high-performance portfolio website built with **React**, **Tailwind CSS**, and **Framer Motion**. This project showcases the skills, experience, and educational background of Funduluka Shangala, a Software Developer based in Lusaka, Zambia.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern UI/UX**: Clean, responsive design using Tailwind CSS.
+- **Glassmorphism**: Elegant header with backdrop blur effects.
+- **Dynamic Animations**: Scroll-triggered reveals and interactive elements powered by Framer Motion.
+- **Project Timeline**: A detailed breakdown of professional experience.
+- **Skills Grid**: Interactive display of technical proficiencies with brand icons.
+- **Optimized Assets**: SVG icons via `react-icons` for sharp visuals at any scale.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Icons**: React Icons
+- **Build Tool**: Vite
 
-## Expanding the ESLint configuration
+## 🏃 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Building for Production
+
+To create an optimized production build:
+```bash
+npm run build
+```
+
+## 📂 Project Structure
+
+- `src/components/`: Modular React components (Hero, About, Experience, etc.).
+- `src/App.jsx`: Main application layout.
+- `src/index.css`: Tailwind configuration and custom animations.
+- `public/`: Static assets including the source resume.
+
+---
+
+Created with ❤️ by Funduluka Shangala.
