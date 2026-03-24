@@ -8,6 +8,7 @@ A professional, high-performance portfolio website built with **React**, **Tailw
 - **Glassmorphism**: Elegant header with backdrop blur effects.
 - **Dynamic Animations**: Scroll-triggered reveals and interactive elements powered by Framer Motion.
 - **Project Timeline**: A detailed breakdown of professional experience.
+- **GitHub Profile Integration**: Real-time profile data from the GitHub API.
 - **Portfolio Showcase**: Interactive gallery of projects with detailed modals.
 - **Skills Grid**: Interactive display of technical proficiencies with brand icons.
 - **Optimized Assets**: SVG icons via `react-icons` for sharp visuals at any scale.
@@ -51,7 +52,7 @@ npm run build
 
 ## 📂 Project Structure
 
-- `src/components/`: Modular React components (Hero, About, Experience, etc.).
+- `src/components/`: Modular React components (Hero, About, GithubProfile, etc.).
 - `src/App.jsx`: Main application layout.
 - `src/index.css`: Tailwind configuration and custom animations.
 - `public/`: Static assets.

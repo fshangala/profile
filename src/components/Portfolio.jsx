@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaTimes } from 'react-icons/fa';
+import premiumfreshImg from '../assets/premiumfresh.png';
 
 export default function Portfolio() {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -8,6 +9,18 @@ export default function Portfolio() {
     const projects = [
         {
             id: 1,
+            title: "PremiumFresh Subscription System",
+            shortDescription: "A weekly vegetable delivery subscription platform.",
+            fullDescription: "An information system built with Next.js that enables customers to subscribe to a weekly vegetable delivery service. Features include a customer portal with order history and profile settings, a driver dashboard with real-time delivery queues and mapping, and an admin area for order monitoring. Built with Supabase for auth/database and Leaflet for maps.",
+            technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Leaflet"],
+            image: premiumfreshImg,
+            links: {
+                github: "https://github.com/fshangala/fooddelivery",
+                demo: "https://fooddelivery-two.vercel.app/"
+            }
+        },
+        {
+            id: 2,
             title: "E-Commerce Dashboard",
             shortDescription: "A comprehensive dashboard for managing online stores.",
             fullDescription: "A full-featured admin dashboard for e-commerce platforms. Features include real-time sales tracking, inventory management, customer analytics, and order processing. Built with performance and scalability in mind.",
@@ -19,7 +32,7 @@ export default function Portfolio() {
             }
         },
         {
-            id: 2,
+            id: 3,
             title: "Task Management App",
             shortDescription: "Collaborative task manager with real-time updates.",
             fullDescription: "A productivity tool designed for teams. It supports drag-and-drop task organization, real-time collaboration via WebSockets, and detailed progress reporting. Includes user authentication and role-based access control.",
@@ -31,7 +44,7 @@ export default function Portfolio() {
             }
         },
         {
-            id: 3,
+            id: 4,
             title: "Weather Forecast API",
             shortDescription: "RESTful API for global weather data.",
             fullDescription: "A robust backend service that aggregates weather data from multiple sources. Provides endpoints for current conditions, forecasts, and historical data. Implements caching strategies for optimal performance.",
@@ -43,7 +56,7 @@ export default function Portfolio() {
             }
         },
          {
-            id: 4,
+            id: 5,
             title: "Portfolio Website V1",
             shortDescription: "My previous personal portfolio site.",
             fullDescription: "The first iteration of my personal portfolio. It focused on simplicity and fast load times. Served as a testing ground for learning new CSS techniques and responsive design principles.",
@@ -103,8 +116,12 @@ export default function Portfolio() {
                             onClick={() => setSelectedProject(project)}
                             className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer group"
                         >
-                            <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-300">
-                                {project.image}
+                            <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+                                {project.image.includes('/') ? (
+                                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                                ) : (
+                                    project.image
+                                )}
                             </div>
                             <div className="p-6">
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
@@ -146,8 +163,12 @@ export default function Portfolio() {
                             exit={{ opacity: 0, scale: 0.9, y: 20 }}
                             className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden z-10"
                         >
-                            <div className="h-64 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-8xl">
-                                {selectedProject.image}
+                            <div className="h-64 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-8xl overflow-hidden">
+                                {selectedProject.image.includes('/') ? (
+                                    <img src={selectedProject.image} alt={selectedProject.title} className="w-full h-full object-cover" />
+                                ) : (
+                                    selectedProject.image
+                                )}
                             </div>
                             
                             <button

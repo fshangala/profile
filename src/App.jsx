@@ -1,6 +1,7 @@
 import Header from './components/header';
 import Hero from './components/Hero';
 import About from './components/About';
+import GithubProfile from './components/GithubProfile';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
@@ -14,6 +15,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <GithubProfile />
         <Portfolio />
         <Experience />
         <Skills />

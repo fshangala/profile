@@ -17,7 +17,7 @@ This document provides foundational mandates and context for Gemini CLI when wor
 
 ## 📝 Content Management
 - When updating experience, skills, or projects, use the information provided manually by the user. 
-- Ensure the `Portfolio` section and Experience timeline remain consistent with the latest provided details.
+- Ensure the `Portfolio`, `GitHub Profile`, and Experience timeline remain consistent with the latest provided details.
 
 ## 🚀 Deployment
 - The project is configured for static hosting. 
