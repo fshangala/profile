@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profileImg from '../assets/profile.jpg';
 
 export default function About() {
     return (
@@ -21,10 +22,14 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
+                        className="relative"
                     >
-                        {/* Placeholder for an image or illustration */}
-                        <div className="aspect-square bg-gradient-to-tr from-blue-100 to-purple-100 rounded-2xl p-8 flex items-center justify-center">
-                            <span className="text-9xl">👨‍💻</span>
+                        <div className="aspect-square bg-gradient-to-tr from-blue-100 to-purple-100 rounded-2xl overflow-hidden shadow-2xl">
+                            <img 
+                                src={profileImg} 
+                                alt="Funduluka Shangala" 
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                     </motion.div>
 
