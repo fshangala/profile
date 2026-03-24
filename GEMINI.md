@@ -4,7 +4,6 @@ This document provides foundational mandates and context for Gemini CLI when wor
 
 ## 🎯 Project Goals
 - Maintain a highly polished, visually appealing developer portfolio.
-- Ensure all content remains synchronized with `public/resume.pdf`.
 - Prioritize performance and smooth animations.
 
 ## 🛠️ Technical Standards
@@ -17,8 +16,8 @@ This document provides foundational mandates and context for Gemini CLI when wor
 - **Responsiveness**: Always test changes for mobile (sm), tablet (md), and desktop (lg) breakpoints.
 
 ## 📝 Content Management
-- When updating experience or skills, cross-reference `public/resume.pdf`.
-- If a new project is added to the resume, create a corresponding card in a (future) Projects section or update the Experience timeline.
+- When updating experience, skills, or projects, use the information provided manually by the user. 
+- Ensure the `Portfolio` section and Experience timeline remain consistent with the latest provided details.
 
 ## 🚀 Deployment
 - The project is configured for static hosting. 

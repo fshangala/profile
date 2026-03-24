@@ -1,17 +1,30 @@
 import { motion } from 'framer-motion';
 import { 
     FaPython, FaReact, FaNodeJs, FaJava, FaPhp, FaLaravel, 
-    FaDatabase, FaAndroid, FaHtml5, FaCss3Alt, FaJs 
+    FaDatabase, FaAndroid, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub
 } from 'react-icons/fa';
-import { SiDjango, SiFlutter, SiDart, SiKotlin, SiC } from 'react-icons/si';
+import { SiDjango, SiFlutter, SiDart, SiKotlin, SiC, SiLangchain, SiN8N, SiHuggingface, SiOllama, SiNextdotjs, SiOpenai, SiGnubash, SiDocker, SiArduino } from 'react-icons/si';
+import { VscTerminalPowershell } from 'react-icons/vsc';
 
 export default function Skills() {
     const skills = [
         { name: "Python", icon: <FaPython className="text-blue-500" /> },
         { name: "Django", icon: <SiDjango className="text-green-900" /> },
         { name: "React", icon: <FaReact className="text-blue-400" /> },
+        { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
         { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
         { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+        { name: "LangChain", icon: <SiLangchain className="text-green-600" /> },
+        { name: "Hugging Face", icon: <SiHuggingface className="text-yellow-500" /> },
+        { name: "Prompt Engineering", icon: <SiOpenai className="text-green-600" /> },
+        { name: "Ollama", icon: <SiOllama className="text-gray-800" /> },
+        { name: "n8n", icon: <SiN8N className="text-red-500" /> },
+        { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
+        { name: "GitHub", icon: <FaGithub className="text-gray-900" /> },
+        { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
+        { name: "Arduino", icon: <SiArduino className="text-teal-600" /> },
+        { name: "PowerShell", icon: <VscTerminalPowershell className="text-blue-600" /> },
+        { name: "Bash", icon: <SiGnubash className="text-gray-700" /> },
         { name: "Flutter", icon: <SiFlutter className="text-blue-400" /> },
         { name: "Dart", icon: <SiDart className="text-blue-600" /> },
         { name: "Java", icon: <FaJava className="text-red-500" /> },
