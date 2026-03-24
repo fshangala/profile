@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { SiUpwork } from 'react-icons/si';
 
 export default function Hero() {
     return (
@@ -49,6 +50,26 @@ export default function Hero() {
                             className="text-gray-600 hover:text-blue-700 transition-colors"
                         >
                             <FaLinkedin size={32} />
+                        </motion.a>
+                        <motion.a 
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            href="https://www.upwork.com/freelancers/~01ca44d8a44361a13d?mp_source=share" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-green-600 transition-colors"
+                        >
+                            <SiUpwork size={32} />
+                        </motion.a>
+                        <motion.a 
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            href="https://wa.me/260974836436" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-green-500 transition-colors"
+                        >
+                            <FaWhatsapp size={32} />
                         </motion.a>
                         <motion.a 
                             whileHover={{ scale: 1.1 }}

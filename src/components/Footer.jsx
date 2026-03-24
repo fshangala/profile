@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
+import { SiUpwork } from 'react-icons/si';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -29,9 +30,9 @@ export default function Footer() {
                                 </div>
                                 <span>fshangala@gmail.com</span>
                             </a>
-                            <a href="tel:+260974836436" className="flex items-center text-gray-300 hover:text-white transition-colors group">
-                                <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-600 transition-colors">
-                                    <FaPhone />
+                            <a href="https://wa.me/260974836436" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-white transition-colors group">
+                                <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-500 transition-colors">
+                                    <FaWhatsapp />
                                 </div>
                                 <span>+260 974 836 436</span>
                             </a>
@@ -67,6 +68,14 @@ export default function Footer() {
                                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition-all transform hover:scale-110"
                             >
                                 <FaLinkedin size={24} />
+                            </a>
+                            <a 
+                                href="https://www.upwork.com/freelancers/~01ca44d8a44361a13d?mp_source=share" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-green-600 transition-all transform hover:scale-110"
+                            >
+                                <SiUpwork size={24} />
                             </a>
                         </div>
                         <p className="text-gray-500 text-center md:text-right">
