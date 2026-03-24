@@ -21,50 +21,14 @@ export default function Portfolio() {
         },
         {
             id: 2,
-            title: "E-Commerce Dashboard",
-            shortDescription: "A comprehensive dashboard for managing online stores.",
-            fullDescription: "A full-featured admin dashboard for e-commerce platforms. Features include real-time sales tracking, inventory management, customer analytics, and order processing. Built with performance and scalability in mind.",
-            technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
-            image: "🛒", // Placeholder using emoji for now, or could use a colored div
+            title: "Developer Portfolio - Funduluka Shangala",
+            shortDescription: "Professional, high-performance portfolio with React & Framer Motion.",
+            fullDescription: "A professional, high-performance portfolio website built with React, Tailwind CSS, and Framer Motion. This project showcases the skills, experience, and educational background of Funduluka Shangala, a Software Developer based in Lusaka, Zambia. Features include a modern UI/UX with glassmorphism, dynamic animations, GitHub profile integration, and an interactive project showcase.",
+            technologies: ["React 19", "Tailwind CSS 4", "Framer Motion", "Vite", "React Icons"],
+            image: "🚀",
             links: {
-                github: "#",
-                demo: "#"
-            }
-        },
-        {
-            id: 3,
-            title: "Task Management App",
-            shortDescription: "Collaborative task manager with real-time updates.",
-            fullDescription: "A productivity tool designed for teams. It supports drag-and-drop task organization, real-time collaboration via WebSockets, and detailed progress reporting. Includes user authentication and role-based access control.",
-            technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-            image: "✅",
-            links: {
-                github: "#",
-                demo: "#"
-            }
-        },
-        {
-            id: 4,
-            title: "Weather Forecast API",
-            shortDescription: "RESTful API for global weather data.",
-            fullDescription: "A robust backend service that aggregates weather data from multiple sources. Provides endpoints for current conditions, forecasts, and historical data. Implements caching strategies for optimal performance.",
-            technologies: ["Python", "FastAPI", "Redis", "Docker"],
-            image: "☁️",
-            links: {
-                github: "#",
-                demo: "#"
-            }
-        },
-         {
-            id: 5,
-            title: "Portfolio Website V1",
-            shortDescription: "My previous personal portfolio site.",
-            fullDescription: "The first iteration of my personal portfolio. It focused on simplicity and fast load times. Served as a testing ground for learning new CSS techniques and responsive design principles.",
-            technologies: ["HTML5", "SASS", "JavaScript"],
-            image: "🎨",
-            links: {
-                github: "#",
-                demo: "#"
+                github: "https://github.com/fshangala/profile",
+                demo: "https://fshangala.github.io/profile/"
             }
         }
     ];

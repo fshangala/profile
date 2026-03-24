@@ -21,6 +21,11 @@ A professional, high-performance portfolio website built with **React**, **Tailw
 - **Icons**: React Icons
 - **Build Tool**: Vite
 
+## 📽️ Featured Projects
+
+- **PremiumFresh Subscription System**: A weekly vegetable delivery subscription platform built with Next.js, Supabase, and Leaflet.
+- **Developer Portfolio**: A professional, high-performance portfolio website built with React 19, Tailwind CSS 4, and Framer Motion.
+
 ## 🏃 Getting Started
 
 ### Prerequisites
