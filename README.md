@@ -1,32 +1,32 @@
 # Developer Portfolio - Funduluka Shangala
 
-A professional, high-performance portfolio website built with **React**, **Tailwind CSS**, and **Framer Motion**. This project showcases the skills, experience, and educational background of Funduluka Shangala, a Software Developer based in Lusaka, Zambia.
+A professional, high-performance portfolio website built with **React** and **Tailwind CSS**. This project showcases the skills, experience, and educational background of Funduluka Shangala, a Software Developer based in Lusaka, Zambia.
 
-## 🚀 Features
+## Features
 
 - **Modern UI/UX**: Clean, responsive design using Tailwind CSS.
 - **Glassmorphism**: Elegant header with backdrop blur effects.
-- **Dynamic Animations**: Scroll-triggered reveals and interactive elements powered by Framer Motion.
+- **CSS-Only Animations**: Smooth transitions and keyframe effects powered by Tailwind CSS utilities.
 - **Project Timeline**: A detailed breakdown of professional experience.
 - **GitHub Profile Integration**: Real-time profile data from the GitHub API.
 - **Portfolio Showcase**: Interactive gallery of projects with detailed modals.
 - **Skills Grid**: Interactive display of technical proficiencies with brand icons.
 - **Optimized Assets**: SVG icons via `react-icons` for sharp visuals at any scale.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React 19
 - **Styling**: Tailwind CSS 4
-- **Animations**: Framer Motion
+- **Animations**: Tailwind CSS (custom keyframes/utilities)
 - **Icons**: React Icons
 - **Build Tool**: Vite
 
-## 📽️ Featured Projects
+## Featured Projects
 
 - **PremiumFresh Subscription System**: A weekly vegetable delivery subscription platform built with Next.js, Supabase, and Leaflet.
-- **Developer Portfolio**: A professional, high-performance portfolio website built with React 19, Tailwind CSS 4, and Framer Motion.
+- **Developer Portfolio**: A professional, high-performance portfolio website built with React 19, Tailwind CSS 4, and CSS-only animations.
 
-## 🏃 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -55,7 +55,7 @@ To create an optimized production build:
 npm run build
 ```
 
-## 📂 Project Structure
+## Project Structure
 
 - `src/components/`: Modular React components (Hero, About, GithubProfile, etc.).
 - `src/App.jsx`: Main application layout.
@@ -64,4 +64,4 @@ npm run build
 
 ---
 
-Created with ❤️ by Funduluka Shangala.
+Created with love by Funduluka Shangala.

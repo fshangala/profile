@@ -1,96 +1,65 @@
-import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp, FaArrowRight, FaFileDownload } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si';
 
+const socialLinks = [
+  { label: 'GitHub', href: 'https://github.com/fshangala', icon: FaGithub, hover: 'hover:text-slate-900' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/fshangala', icon: FaLinkedin, hover: 'hover:text-brand-700' },
+  { label: 'Upwork', href: 'https://www.upwork.com/freelancers/~01ca44d8a44361a13d?mp_source=share', icon: SiUpwork, hover: 'hover:text-emerald-600' },
+  { label: 'WhatsApp', href: 'https://wa.me/260974836436', icon: FaWhatsapp, hover: 'hover:text-emerald-600' },
+  { label: 'Email', href: 'mailto:fshangala@gmail.com', icon: FaEnvelope, hover: 'hover:text-rose-600' },
+];
+
 export default function Hero() {
-    return (
-        <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 to-blue-50">
-            {/* Abstract Background Shapes */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute -top-24 -right-24 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-                <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-                <div className="absolute -bottom-8 left-20 w-80 h-80 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
-            </div>
+  return (
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-slate-100 via-brand-50 to-slate-200"
+    >
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand-500/30 mix-blend-multiply blur-3xl animate-blob" />
+        <div className="animation-delay-2000 absolute -left-6 top-12 h-80 w-80 rounded-full bg-sky-400/20 mix-blend-multiply blur-3xl animate-blob" />
+        <div className="animation-delay-4000 absolute bottom-0 left-20 h-80 w-80 rounded-full bg-indigo-300/20 mix-blend-multiply blur-3xl animate-blob" />
+      </div>
 
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-20 text-center sm:px-6 lg:px-8">
+        <div>
+          <p className="mb-4 text-lg font-semibold text-brand-700 md:text-xl">Hello, I'm</p>
+          <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 md:text-7xl">Funduluka Shangala</h1>
+          <h2 className="mb-4 text-2xl font-semibold text-slate-700 md:text-4xl">Software Developer</h2>
+          <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-slate-700">
+            I design and ship performant web applications, automation systems, and developer-focused products that solve practical business problems.
+          </p>
+          <p className="mx-auto mb-10 max-w-2xl text-base text-slate-600">Based in Lusaka, Zambia.</p>
+
+          <div className="mb-10 flex flex-wrap items-center justify-center gap-4">
+            <a href="#portfolio" className="btn-primary">
+              View Projects <FaArrowRight />
+            </a>
+            <a href="#contact" className="btn-secondary">
+              Download CV <FaFileDownload />
+            </a>
+          </div>
+          <p className="mb-10 text-sm text-slate-500">CV download link will be added once the latest PDF is finalized.</p>
+
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+            {socialLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.href.startsWith('http') ? '_blank' : undefined}
+                  rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className={`rounded-full border border-slate-200 bg-white/80 p-3 text-slate-600 shadow-sm transition-all hover:-translate-y-0.5 ${link.hover}`}
+                  aria-label={link.label}
                 >
-                    <h2 className="text-xl md:text-2xl font-semibold text-blue-600 mb-4">Hello, I'm</h2>
-                    <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
-                        Funduluka Shangala
-                    </h1>
-                    <h3 className="text-2xl md:text-4xl font-medium text-gray-600 mb-8">
-                        Software Developer
-                    </h3>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
-                        Crafting efficient and innovative software solutions. 
-                        Based in Lusaka, Zambia.
-                    </p>
-                    
-                    <div className="flex justify-center space-x-6 mb-12">
-                        <motion.a 
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
-                            href="https://github.com/fshangala" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-gray-900 transition-colors"
-                        >
-                            <FaGithub size={32} />
-                        </motion.a>
-                        <motion.a 
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
-                            href="https://www.linkedin.com/in/fshangala" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-blue-700 transition-colors"
-                        >
-                            <FaLinkedin size={32} />
-                        </motion.a>
-                        <motion.a 
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
-                            href="https://www.upwork.com/freelancers/~01ca44d8a44361a13d?mp_source=share" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-green-600 transition-colors"
-                        >
-                            <SiUpwork size={32} />
-                        </motion.a>
-                        <motion.a 
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
-                            href="https://wa.me/260974836436" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-green-500 transition-colors"
-                        >
-                            <FaWhatsapp size={32} />
-                        </motion.a>
-                        <motion.a 
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
-                            href="mailto:fshangala@gmail.com"
-                            className="text-gray-600 hover:text-red-500 transition-colors"
-                        >
-                            <FaEnvelope size={32} />
-                        </motion.a>
-                    </div>
-
-                    <motion.a
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        href="#contact"
-                        className="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition-colors"
-                    >
-                        Get in Touch
-                    </motion.a>
-                </motion.div>
-            </div>
-        </section>
-    );
+                  <Icon size={22} />
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
